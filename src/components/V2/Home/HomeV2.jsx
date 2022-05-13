@@ -53,11 +53,11 @@ export default function Home() {
                     <img src="https://i.ibb.co/cNNqZgB/postgre.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", bottom: "6.8vh", left: "10vw", opacity: "0.4" }} />
                     {/* Phone media images */}
                     <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", top: "6vh", left: "9vw", transform: "rotate(15deg)" }} />
-                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", bottom: "6vh", left: "70vw", transform: "rotate(-155deg)" }} />
+                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", bottom: "3vh", left: "70vw", transform: "rotate(-155deg)" }} />
                     <img src="https://i.ibb.co/CnFkZY1/react.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", top: "6vh", left: "40vw", opacity: "0.6" }} />
-                    <img src="https://i.ibb.co/4MZyp5t/nodejs.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", bottom: "6.8vh", left: "40vw", opacity: "0.4" }} />
+                    <img src="https://i.ibb.co/4MZyp5t/nodejs.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", bottom: "3.8vh", left: "40vw", opacity: "0.4" }} />
                     <img src="https://i.ibb.co/dfp09PG/secuencia-de-comandos-de-java.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", top: "6.5vh", left: "70vw", opacity: "0.6" }} />
-                    <img src="https://i.ibb.co/cNNqZgB/postgre.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", bottom: "6.8vh", left: "10vw", opacity: "0.4" }} />
+                    <img src="https://i.ibb.co/cNNqZgB/postgre.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", bottom: "3.8vh", left: "10vw", opacity: "0.4" }} />
 
 
                     <div
