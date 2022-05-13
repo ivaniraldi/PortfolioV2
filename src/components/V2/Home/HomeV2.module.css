@@ -1,0 +1,16 @@
+@media (max-width: 1000px) {
+    .imgFullScreen {
+      display: none;
+    }
+  }
+  @media (min-width: 517px) {
+    .imgPhoneScreen {
+      display: none;
+    }
+  }
+  @media (min-width: 1000px) {
+    .msg {
+      display: none;
+    }
+    
+  }
