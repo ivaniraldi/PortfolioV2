@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 import s from './Bg.module.css'
 import { Link } from 'react-router-dom'
+import ParticlesBackground from '../particles/particleBackground'
 
 
 export default function Bg() {
@@ -17,6 +18,7 @@ export default function Bg() {
                     background: "black",
                 }}
             >
+                <ParticlesBackground></ParticlesBackground>
                 <Link to="/home">
                     <motion.h1
                         initial={{ opacity: 0 }}

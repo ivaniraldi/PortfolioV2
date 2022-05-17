@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import ParticlesStars from '../../particles/particlesStars'
+import ParticlesBackground from '../../particles/particleBackground'
+
 
 export default function ProjectsV2() {
     return (
@@ -37,7 +40,7 @@ export default function ProjectsV2() {
                 >
                     <div
                         className="p-4"
-                    >
+                        >
                             <div className="md:hidden sm:hidden lg:hidden xl:grid 2xl:grid hidden">
                                 <Link to="/home">
                                     <img src="https://i.ibb.co/MsgSJ8v/previous-1.png" style={{ width: "40px", opacity: "0.3", borderRadius: "100%", boxShadow: " 5px 5px 5px black", position: "fixed", bottom: "6%" }} alt=""  />
