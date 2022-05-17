@@ -12,7 +12,7 @@ export default function Bg() {
                 style={{
                     height: '100vh',
                     width: '100%',
-                    position: 'absolute',
+                    position: 'absolute', 
                     justifyContent: 'center',
                     display: 'flex',
                     background: "black",
