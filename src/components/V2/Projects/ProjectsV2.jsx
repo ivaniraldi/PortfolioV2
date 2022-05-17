@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import ParticlesStars from '../../particles/particlesStars'
-import ParticlesBackground from '../../particles/particleBackground'
 
 
 export default function ProjectsV2() {
