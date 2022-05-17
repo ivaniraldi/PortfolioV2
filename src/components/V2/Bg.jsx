@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion"
 import s from './Bg.module.css'
 import { Link } from 'react-router-dom'
-import ParticlesBackground from '../particles/ParticleBackground.jsx'
+import ParticlesBackground from '../particles/particleBackground'
 
 
 export default function Bg() {
