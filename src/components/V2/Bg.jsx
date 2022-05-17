@@ -30,7 +30,7 @@ export default function Bg() {
                         }
                         }
                         className={s.glitch}
-                    >Ivan.Iraldi</motion.h1> 
+                    >Ivan.Iraldi</motion.h1>
 
 
                     <motion.h4
