@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import s from './HomeV2.module.css'
+import ParticlesHome from '../../particles/ParticlesHome.jsx'
 
 export default function Home() {
     return (
@@ -20,9 +21,10 @@ export default function Home() {
                 style={{
                     width: '98%',
                     height: '96vh',
-                    background: 'linear-gradient(0deg, rgba(26, 2, 35, 0.41), rgba(26, 2, 35, 0.41)), linear-gradient(0deg, rgba(1, 0, 2, 0.06), rgba(1, 0, 2, 0.06)), #663E86',
+                    background: '#000',
                     boxShadow: "2px 3px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",
                     borderRadius: "6px",
+                    // border: "1px solid #fff",
                 }}
 
             >
@@ -32,11 +34,12 @@ export default function Home() {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                     className="sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-2/5 w-full flex justify-center items-center"
-                    style={{
+                    style={{    
+                        zIndex: "1",
 
                         height: '96%',
-                        background: "#141414",
-                        borderRadius: "7px",
+                        background: "none",
+                        borderRadius: "3px",
                         boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                         marginTop: "1%",
                         marginRight: "1%",
@@ -45,15 +48,14 @@ export default function Home() {
                     }}
 
                 >
-                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "6vw", top: "6vh", left: "3vw", transform: "rotate(15deg)" }} />
-                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "6vw", bottom: "6vh", left: "22vw", transform: "rotate(-155deg)" }} />
-                    <img src="https://i.ibb.co/CnFkZY1/react.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "6vw", top: "6vh", left: "14vw", opacity: "0.6" }} />
-                    <img src="https://i.ibb.co/4MZyp5t/nodejs.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", bottom: "6.8vh", left: "3vw", opacity: "0.4" }} />
-                    <img src="https://i.ibb.co/dfp09PG/secuencia-de-comandos-de-java.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", top: "6.5vh", left: "22vw", opacity: "0.6" }} />
-                    <img src="https://i.ibb.co/cNNqZgB/postgre.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", bottom: "6.8vh", left: "10vw", opacity: "0.4" }} />
+
+                    <img src="https://i.ibb.co/CnFkZY1/react.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "6vw", top: "6vh", left: "3vw", opacity: "0.3" }} />
+                    <img src="https://i.ibb.co/4MZyp5t/nodejs.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", bottom: "15vh", left: "80vw", opacity: "0.2" }} />
+                    <img src="https://i.ibb.co/dfp09PG/secuencia-de-comandos-de-java.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", top: "35.5vh", left: "85vw", opacity: "0.6" }} />
+                    <img src="https://i.ibb.co/cNNqZgB/postgre.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", bottom: "6.8vh", left: "3vw", opacity: "0.1" }} />
                     {/* Phone media images */}
-                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", top: "6vh", left: "9vw", transform: "rotate(15deg)" }} />
-                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", bottom: "1vh", left: "70vw", transform: "rotate(-155deg)" }} />
+                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", top: "6vh", left: "9vw", transform: "rotate(15deg)", opacity:"0.4" }} />
+                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", bottom: "1vh", left: "70vw", transform: "rotate(-155deg)", opacity:"0.4" }} />
                     <img src="https://i.ibb.co/CnFkZY1/react.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", top: "6vh", left: "40vw", opacity: "0.6" }} />
                     <img src="https://i.ibb.co/4MZyp5t/nodejs.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", bottom: "1.8vh", left: "40vw", opacity: "0.4" }} />
                     <img src="https://i.ibb.co/dfp09PG/secuencia-de-comandos-de-java.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", top: "6.5vh", left: "70vw", opacity: "0.6" }} />
@@ -65,18 +67,20 @@ export default function Home() {
                         style={{
                             height: '60%',
                             width: '74%',
-                            background: "#552c77",
-                            borderRadius: "7px",
+                            background: "none",
+                            borderRadius: "3px",
                             boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                             marginTop: "1%",
                             marginLeft: "1%",
                         }}
                     >
                         <div>
+                            <ParticlesHome></ParticlesHome> 
                             <Link to="/projects">
                                 <motion.p
                                     initial={{ opacity: 0, x: -150 }}
                                     animate={{ opacity: 1, x: 0 }}
+                                    whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
                                     transition={{ duration: 0.5, ease: "easeInOut" }}
                                     className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
                                 >PROJECTS</motion.p>
@@ -85,6 +89,7 @@ export default function Home() {
                                 <motion.p
                                     initial={{ opacity: 0, x: -150 }}
                                     animate={{ opacity: 1, x: 0 }}
+                                    whileHover={{ opacity: 1, x: +10, scale: 1.1 }}
                                     transition={{ duration: 0.6, ease: "easeInOut" }}
                                     className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
                                 >ABOUT</motion.p>
@@ -93,6 +98,7 @@ export default function Home() {
                             <motion.p
                                 initial={{ opacity: 0, x: -150 }}
                                 animate={{ opacity: 1, x: 0 }}
+                                whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
                                 transition={{ duration: 0.7, ease: "easeInOut" }}
                                 className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
                             >RESUME</motion.p>
@@ -101,6 +107,7 @@ export default function Home() {
                                 <motion.p
                                     initial={{ opacity: 0, x: -150 }}
                                     animate={{ opacity: 1, x: 0 }}
+                                    whileHover={{ opacity: 1, x: +10, scale: 1.1 }}
                                     transition={{ duration: 0.8, ease: "easeInOut" }}
                                     className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
                                 >CONTACT</motion.p>
@@ -109,6 +116,7 @@ export default function Home() {
                                 <motion.p
                                     initial={{ opacity: 0, x: -150 }}
                                     animate={{ opacity: 1, x: 0 }}
+                                    whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
                                     transition={{ duration: 0.9, ease: "easeInOut" }}
                                     className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
                                 >SKILLS</motion.p>
@@ -129,7 +137,7 @@ export default function Home() {
                             initial={{ opacity: 0, y: -500 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: "easeInOut" }}
-                            className='text-white absolute' style={{ right: "10vw", top: "50px", zIndex: "1", fontFamily: "Iceberg", fontSize: "6vw", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000" }}
+                            className=' absolute' style={{ color: "#dc41ff82", right: "10vw", top: "50px", zIndex: "1", fontFamily: "Iceberg", fontSize: "6vw", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000" }}
                         >Ivan.Iraldi</motion.p>
                         <motion.p
                             initial={{ opacity: 0, y: -500 }}
@@ -149,14 +157,13 @@ export default function Home() {
                                 scale: [1, 0.5, 0.5, 1, 1],
                                 rotate: [0, 0, 270, 270, 0],
                             }}
-                            className={`absolute  ${s.imgFullScreen}`} style={{ top: "9vh", right: "9vw", zIndex: "0" }} src='https://i.ibb.co/sPfDfYg/hexagonos.png' alt=""  />
+                            className={`absolute  ${s.imgFullScreen}`} style={{ bottom:"0vh", right: "0vw", zIndex: "0" }} src='https://i.gifer.com/Hihj.gif' alt=""  />
 
-
-                        <motion.img
+                        {/* <motion.img
                             initial={{ opacity: 0,  y:1300, x:-500 }}
                             animate={{ opacity: 0.3, y: 0, x: 0 }}
                             transition={{ duration: 1, ease: "easeInOut" }}
-                            className={`absolute  ${s.imgFullScreen}`} style={{ bottom: "1vh", left: "26vw", opacity: "0.3", zIndex: "0", width: "300px" }} src='https://i.ibb.co/P59vSMz/afaf2ef7-c841-4985-8ab7-8c704f7517bb.png' alt="" />
+                            className={`absolute  ${s.imgFullScreen}`} style={{ bottom: "1vh", left: "26vw", opacity: "0.3", zIndex: "0", width: "300px" }} src='https://i.ibb.co/P59vSMz/afaf2ef7-c841-4985-8ab7-8c704f7517bb.png' alt="" /> */}
 
 
                         <div className='h-24 w-1/4 fixed' style={{ bottom: "12vh", right: "10vw" }}>
