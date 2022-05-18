@@ -30,7 +30,7 @@ export default function AboutV2() {
                     style={{
                         width: '98%',
                         height: '96%',
-                        background: "#141414",
+                        background: "#000",
                         borderRadius: "7px",
                         boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                     }}
