@@ -3,54 +3,54 @@
         "Project_id": "1",
         "Project_name": "touristicGate",
         "Project_description": "A Single page app that can be used to create a touristic activity for any country you want.",
-        "Project_start_date": "2019-01-01",
-        "Project_end_date": "2019-01-01",
+        "Project_start_date": "2020-01-01",
+        "Project_end_date": "2022-3-11",
         "Project_status": "Active",
         "Project_Users": "1",
-        "Project_Link": "https://www.google.com",
-        "Project_Code":"https://www.google.com",
-        "Project_Languages":"JavaScript",
-        "Project_Image": "https://via.placeholder.com/300.png"
+        "Project_Link": "https://touristicgate.vercel.app/",
+        "Project_Code":"https://github.com/ivaniraldi/touristicGate",
+        "Project_Languages":["JavaScript", "HTML", "CSS"],
+        "Project_Image": "https://i.ibb.co/ZVVQtxM/Captura-de-pantalla-2022-05-19-012229.png"
 
 
     },
     {
         "Project_id": "2",
-        "Project_name": "Project 2",
-        "Project_description": "Project 2 description",
+        "Project_name": "TyrGaming",
+        "Project_description": "Another SPA created to view games caratules and create your own one, still on development.",
         "Project_start_date": "2019-01-01",
-        "Project_end_date": "2019-01-01",
+        "Project_end_date": "2021-9-04",
         "Project_status": "Active",
         "Project_Users": "1",
-        "Project_Link": "https://www.google.com",
-        "Project_Code":"https://www.google.com",
-        "Project_Languages":"JavaScript",
-        "Project_Image": "https://via.placeholder.com/300.png"
+        "Project_Link": "https://github.com/ivaniraldi/TyrGaming",
+        "Project_Code":"https://github.com/ivaniraldi/TyrGaming",
+        "Project_Languages":["JavaScript", "HTML", "CSS"],
+        "Project_Image": "https://i.ibb.co/2ZNk0WC/Captura-de-pantalla-2022-05-19-012359.png"
     },
     {
         "Project_id": "3",
-        "Project_name": "Project 3",
-        "Project_description": "Project 3 description",
+        "Project_name": "woofizy",
+        "Project_description": "An app where you can search, filtrate, order and create dogs breeds, consume an API.",
         "Project_start_date": "2019-01-01",
-        "Project_end_date": "2019-01-01",
+        "Project_end_date": "2022-1-15",
         "Project_status": "Active",
         "Project_Users": "1",
-        "Project_Link": "https://www.google.com",
-        "Project_Code":"https://www.google.com",
-        "Project_Languages":"JavaScript",
-        "Project_Image": "https://via.placeholder.com/300.png"
+        "Project_Link": "https://woofizy.vercel.app/",
+        "Project_Code":"https://github.com/ivaniraldi/woofizy",
+        "Project_Languages":["JavaScript", "HTML", "CSS"],
+        "Project_Image": "https://i.ibb.co/nbFHmMK/Captura-de-pantalla-2022-05-19-012310.png"
     },
     {
         "Project_id": "4",
-        "Project_name": "Project 4",
-        "Project_description": "Project 4 description",
+        "Project_name": "Sotelino",
+        "Project_description": "An art gallery app, made for a client that is a painter, it has protected routes, login and an E-commerce.",
         "Project_start_date": "2019-01-01",
-        "Project_end_date": "2019-01-01",
+        "Project_end_date": "2022-5-12",
         "Project_status": "Active",
-        "Project_Users": "1",
-        "Project_Link": "https://www.google.com",
-        "Project_Code":"https://www.google.com",
-        "Project_Languages":"JavaScript",
-        "Project_Image": "https://via.placeholder.com/300.png"
+        "Project_Users": "6",
+        "Project_Link": "https://sotelino.vercel.app/",
+        "Project_Code":"https://github.com/ivaniraldi/Art-E-Commerce",
+        "Project_Languages":["JavaScript", "HTML", "CSS"],
+        "Project_Image": "https://i.ibb.co/RzRYDbh/Captura-de-pantalla-2022-05-19-012434.png"
     }
 ]

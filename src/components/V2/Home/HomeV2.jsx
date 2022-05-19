@@ -1,10 +1,38 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import Swal from 'sweetalert2'
 import s from './HomeV2.module.css'
 import ParticlesHome from '../../particles/ParticlesHome.jsx'
 
 export default function Home() {
+    function handleDownload(){
+        let timerInterval
+Swal.fire({
+  title: 'Downloading Resume!',
+  backdrop: true,
+  background: "#000",
+  color: "#fff",
+  html: 'Done in <b></b> milliseconds.',
+  timer: 1000,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading()
+    const b = Swal.getHtmlContainer().querySelector('b')
+    timerInterval = setInterval(() => {
+      b.textContent = Swal.getTimerLeft()
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+    }
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -94,10 +122,11 @@ export default function Home() {
                                     className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
                                 >ABOUT</motion.p>
                             </Link>
-                            <a href="https://fv9-1.failiem.lv/down.php?cf&i=8nypjn46t&n=Curriculum+Vitae.pdf" target="_self">
+                            <a onClick={() => handleDownload()} href="https://fv9-1.failiem.lv/down.php?cf&i=8nypjn46t&n=Curriculum+Vitae.pdf" target="_self">
                             <motion.p
                                 initial={{ opacity: 0, x: -150 }}
                                 animate={{ opacity: 1, x: 0 }}
+                                
                                 whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
                                 transition={{ duration: 0.7, ease: "easeInOut" }}
                                 className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
