@@ -54,44 +54,57 @@ export default function ProjectsV2() {
                 >
                     <div
                         className="p-4"
-                        >
+                    >
 
-                         {/* WINDOW VIEWPORT */}
+                        {/* WINDOW VIEWPORT */}
                         <div className="items-center justify-center hidden sm:flex sm:flex-col" style={{
                             width: '100%',
                             height: '100%',
+                            
                         }}>
-                                <h1 style={{
+                            <motion.h1
+                                initial={{ opacity: 0, y: -200 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.4, ease: "easeInOut" }}
+
+                                style={{
                                     color: '#fff',
                                     fontSize: '2.5vw',
                                     fontWeight: 'bold',
                                     fontFamily: "Iceberg",
                                     textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",
-                                    marginBottom: "6vh",
-                                }}>My Projects:</h1>
-                            <div className='grid grid-cols-4 text-white gap-10'>
-                                
-                                {projects.map((project, index) => (
+                                    marginBottom: "3vh",
                                     
-                                    <motion.a 
-                                    onClick={() => {
-                                        setModalOpen({
-                                          [index]: true,
-                                        });
-                                      }}
+                                }}>My Projects:</motion.h1>
+                            <motion.div
+                                initial={{ opacity: 0, x: -400 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.7, ease: "easeInOut" }}
 
-                                    initial={{ opacity: 0, }}
-                                    animate={{ opacity: 1, }}
-                                    transition={{ duration: 0.1, ease: "easeInOut" }}
-                                    whileHover={{ scale: 1.05 }}
-                                    key={index} 
-                                    className={`flex flex-col items-center justify-center px-4`}
-                                    style={{ 
-                                        border: "5px double gray",
-                                        width: "20vw",
-                                        backdropFilter: "blur(5px)",
-                                        borderRadius: "6px",
-                                        zIndex: "2"
+                                className='grid grid-cols-4 text-white gap-10'>
+
+                                {projects.map((project, index) => (
+
+                                    <motion.a
+                                        onClick={() => {
+                                            setModalOpen({
+                                                [index]: true,
+                                            });
+                                        }}
+
+                                        initial={{ opacity: 0, }}
+                                        animate={{ opacity: 1, }}
+                                        transition={{ duration: 0.1, ease: "easeInOut" }}
+                                        whileHover={{ scale: 1.05 }}
+                                        key={index}
+                                        className={`flex flex-col items-center justify-center px-4`}
+                                        style={{
+                                            border: "5px double gray",
+                                            width: "20vw",
+                                            backdropFilter: "blur(5px)",
+                                            borderRadius: "6px",
+                                            cursor:"pointer",
+                                            zIndex: "2"
 
                                         }}>
                                         {modalOpen[index] && <PDetail
@@ -104,178 +117,192 @@ export default function ProjectsV2() {
                                             setOpenModal={setModalOpen}
                                         />}
                                         <div className={`${modalOpen[index] ? 'hidden' : ''} text-center`}>
-                                        <h1 style={{
-                                            fontSize: "2vw",
-                                            fontWeight: "bold",
-                                            paddingBottom:"0.5vw",
-                                            fontFamily:"Iceberg",
-                                        }}>{project.Project_name}</h1>
-                                        <img src={project.Project_Image} alt={project.Project_name} className="object-cover"
-                                        style={{
-                                            width: "18vw",
-                                            height: "18vw",
-                                            borderRadius: "6px",
-                                            opacity: "0.8",
-                                        }} />
-                                        <div className="flex items-center justify-center py-4">
-                                            <a href={project.Project_Link} target="_blank">
-                                                <motion.img src='https://i.ibb.co/g3DPSLH/vinculado.png' alt='' className="bg-black text-white font-bold rounded-full"
-                                                initial={{ opacity: 0}}
-                                                animate={{ opacity: 1}}
-                                                transition={{ duration: 0.1, ease: "easeInOut"}}
-                                                whileHover={{ scale: 1.1}}
+                                            <h1 style={{
+                                                fontSize: "2vw",
+                                                fontWeight: "bold",
+                                                paddingBottom: "0.5vw",
+                                                fontFamily: "Iceberg",
+                                            }}>{project.Project_name}</h1>
+                                            <motion.img 
+                                            whileHover={{scale: 0.95}} src={project.Project_Image} alt={project.Project_name} className="object-cover"
                                                 style={{
-                                                    width:"3vw",
+                                                    width: "18vw",
+                                                    height: "18vw",
+                                                    borderRadius: "6px",
+                                                    opacity: "0.8",
+                                                }} />
+                                            <div className="flex items-center justify-center py-4">
+                                                <a href={project.Project_Link} target="_blank">
+                                                    <motion.img src='https://i.ibb.co/g3DPSLH/vinculado.png' alt='' className="bg-black text-white font-bold rounded-full"
+                                                        initial={{ opacity: 0 }}
+                                                        animate={{ opacity: 1 }}
+                                                        transition={{ duration: 0.1, ease: "easeInOut" }}
+                                                        whileHover={{ scale: 1.1 }}
+                                                        style={{
+                                                            width: "3vw",
 
-                                                }}/>
-                                            </a>
-                                            <a href={project.Project_Code} target="_blank">
-                                                <motion.img src='https://i.ibb.co/yfyNxkW/github-1.png' alt='' className="bg-black text-white font-bold ml-5 rounded-full"
-                                                initial={{ opacity: 0}}
-                                                animate={{ opacity: 1}}
-                                                transition={{ duration: 0.1, ease: "easeInOut"}}
-                                                whileHover={{ scale: 1.1}}
-                                                style={{
-                                                    width:"3vw",
+                                                        }} />
+                                                </a>
+                                                <a href={project.Project_Code} target="_blank">
+                                                    <motion.img src='https://i.ibb.co/yfyNxkW/github-1.png' alt='' className="bg-black text-white font-bold ml-5 rounded-full"
+                                                        initial={{ opacity: 0 }}
+                                                        animate={{ opacity: 1 }}
+                                                        transition={{ duration: 0.1, ease: "easeInOut" }}
+                                                        whileHover={{ scale: 1.1 }}
+                                                        style={{
+                                                            width: "3vw",
 
-                                                }}/>
+                                                        }} />
 
-                                            </a>
+                                                </a>
                                             </div>
-                                            </div>
+                                        </div>
                                     </motion.a>
 
                                 ))}
 
-                            </div>
-                            </div>
+                            </motion.div>
+                        </div>
 
-                            {/* PHONE VIEWPORT */}
-                            <div className="items-center justify-center flex sm:hidden" style={{
-                                width: '100%',
-                                color: '#fff',
-                                height: '100%',
-                            }}>
-                                <Swiper 
-                                    id='swiper'
-                                    style={{height:"88vh", width:"100%"}}
-                                    spaceBetween={10}
-                                    slidesPerView={1}
-                                    loop={true}
-                                    pagination={{ clickable: true }}
-                                >
-                                    {projects.map((project, index) => (
-                                        <SwiperSlide key={index}>
-                                            <div className="flex flex-col items-center justify-center px-4" style={{                                                    width: "100%",
-                                                    height: "100%",}}>
-                                                <h1 style={{
-                                                    fontSize: "8vw",
-                                                    fontWeight: "bold",
+                        {/* PHONE VIEWPORT */}
+                        <div className="items-center justify-center flex sm:hidden" style={{
+                            width: '100%',
+                            color: '#fff',
+                            height: '100%',
+                        }}>
+                            <Swiper
+                                id='swiper'
+                                style={{ height: "88vh", width: "100vw" }}
+                                spaceBetween={10}
+                                slidesPerView={1}
+                                loop={true}
+                                pagination={{ clickable: true }}
+                            >
+                                {projects.map((project, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className="flex flex-col items-center justify-center px-4" style={{
+                                            width: "100%",
+                                            height: "100%",
+                                        }}>
+                                            <h1 style={{
+                                                fontSize: "8vw",
+                                                fontWeight: "bold",
 
-                                                    paddingBottom:"0.5vw",
-                                                    fontFamily:"Iceberg",
-                                                }}>{project.Project_name}</h1>
-                                                <img src={project.Project_Image} alt={project.Project_name} className="object-cover"
+                                                paddingBottom: "0.5vw",
+                                                fontFamily: "Iceberg",
+                                            }}>{project.Project_name}</h1>
+                                            <img src={project.Project_Image} alt={project.Project_name} className="object-cover"
                                                 style={{
                                                     width: "60vw",
                                                     height: "60vw",
                                                     borderRadius: "6px",
                                                     opacity: "0.8",
                                                 }} />
-                                                <p style={
-                                                    {
-                                                        fontSize: "5vw",
-                                                        paddingBottom:"1.5vw",
-                                                        paddingTop:"1.5vw",
-                                                        textAlign: "center",
-                                                        fontFamily:"Iceberg",
-                                                    }
-                                                }>{project.Project_description}</p>
-                                                <div className='grid grid-cols-2'>
-                                                    <div>
-                                                        <h1 style={{
-                                                            fontSize: "5vw",
-                                                            fontWeight: "bold",
-                                                            textAlign   : "center",
-                                                            fontFamily:"Iceberg",}}>Languages:</h1>
-                                                            <p style={
-                                                              {  fontSize: "4vw",
-                                                                fontFamily:"Iceberg",
-                                                                textAlign: "center",
-                                                                }
-                                                            }>{project.Project_Languages.map(p => (<motion.button className='m-1'>{p + " "}</motion.button>))}</p>                                                            
-                                                    </div>
+                                            <p style={
+                                                {
+                                                    fontSize: "5vw",
+                                                    paddingBottom: "1.5vw",
+                                                    paddingTop: "1.5vw",
+                                                    textAlign: "center",
+                                                    fontFamily: "Iceberg",
+                                                }
+                                            }>{project.Project_description}</p>
+                                            <div className='grid grid-cols-2'>
+                                                <div>
 
-                                                    <div>
-                                                        <h1 style={{
-                                                            fontSize: "5vw",
-                                                            fontWeight: "bold",
-                                                            textAlign: "center",
-                                                            fontFamily:"Iceberg",}}>Users:</h1>
-                                                            <p style={{
-                                                                fontSize: "6vw",
-                                                                fontFamily:"Iceberg",
-                                                                textAlign: "center",
-                                                                fontWeight: "bold",
-                                                            }}>{project.Project_Users}</p>
-                                                    </div>
-
-                                                </div>
-                                                <p style={{
-                        color: '#fff',
-                        fontSize: '8vw',
-                        fontWeight: 'bold',
-                        fontFamily: "Iceberg",
-                        textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",}}>Date: {project.Project_end_date}</p>
-                                                <div className="flex items-center justify-center py-4">
-                                                    <a href={project.Project_Link} target="_blank">
-                                                        <motion.img src='https://i.ibb.co/g3DPSLH/vinculado.png' alt='' className="bg-black text-white font-bold rounded-full"
-                                                        initial={{ opacity: 0}}
-                                                        animate={{ opacity: 1}}
-                                                        transition={{ duration: 0.1, ease: "easeInOut"}}
-                                                        whileHover={{ scale: 1.1}}
-                                                        style={{
-                                                            width:"10vw",
-
-                                                        }}/>
-                                                    </a>
-                                                    <a href={project.Project_Code} target="_blank">
-                                                        <motion.img src='https://i.ibb.co/yfyNxkW/github-1.png' alt='' className="bg-black text-white font-bold ml-5 rounded-full"
-                                                        initial={{ opacity: 0}}
-                                                        animate={{ opacity: 1}}
-                                                        transition={{ duration: 0.1, ease: "easeInOut"}}
-                                                        whileHover={{ scale: 1.1}}
-                                                        style={{
-                                                            width:"10vw",
-
-                                                        }}/>
-
-                                                    </a>
-                                                </div>
-                                                    <p className="text-center" style={{
-                                                        fontSize: "3vw",
-                                                        color:"gray",
-                                                        opacity: "0.5",
-                                                        fontWeight: "bold",
+                                                    <p style={{
+                                                        color: '#fff',
+                                                        fontSize: '5vw',
+                                                        textAlign: 'center',
+                                                        fontWeight: 'bold',
                                                         fontFamily: "Iceberg",
                                                         textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",
-                                                    }}> {"<<< Slide >>>"}</p>
+                                                    }}>Date: <p style={{
+                                                        color: '#fff',
+                                                        fontSize: '6vw',
+                                                        textAlign: "center",
+                                                        fontFamily: "Iceberg",
+                                                    }}>{project.Project_end_date}</p></p>
+                                                </div>
+
+                                                <div>
+                                                    <h1 style={{
+                                                        fontSize: "5vw",
+                                                        fontWeight: "bold",
+                                                        textAlign: "center",
+                                                        fontFamily: "Iceberg",
+                                                    }}>Users:</h1>
+                                                    <p style={{
+                                                        fontSize: "6vw",
+                                                        fontFamily: "Iceberg",
+                                                        textAlign: "center",
+                                                        fontWeight: "bold",
+                                                    }}>{project.Project_Users}</p>
+                                                </div>
+
                                             </div>
-                                        </SwiperSlide>
-                                    ))}
+                                            <h1 style={{
+                                                fontSize: "5vw",
+                                                fontWeight: "bold",
+                                                textAlign: "center",
+                                                fontFamily: "Iceberg",
+                                            }}>Tools:</h1>
+                                            <p style={
+                                                {
+                                                    fontSize: "4vw",
+                                                    fontFamily: "Iceberg",
+                                                    textAlign: "center",
+                                                }
+                                            }>{project.Project_Languages.map(p => (<motion.button className='m-1'>{p + " "}</motion.button>))}</p>
+                                            <div className="flex items-center justify-center py-4">
+                                                <a href={project.Project_Link} target="_blank">
+                                                    <motion.img src='https://i.ibb.co/g3DPSLH/vinculado.png' alt='' className="bg-black text-white font-bold rounded-full"
+                                                        initial={{ opacity: 0 }}
+                                                        animate={{ opacity: 1 }}
+                                                        transition={{ duration: 0.1, ease: "easeInOut" }}
+                                                        whileHover={{ scale: 1.1 }}
+                                                        style={{
+                                                            width: "10vw",
 
-                                </Swiper>
-                                </div>
+                                                        }} />
+                                                </a>
+                                                <a href={project.Project_Code} target="_blank">
+                                                    <motion.img src='https://i.ibb.co/yfyNxkW/github-1.png' alt='' className="bg-black text-white font-bold ml-5 rounded-full"
+                                                        initial={{ opacity: 0 }}
+                                                        animate={{ opacity: 1 }}
+                                                        transition={{ duration: 0.1, ease: "easeInOut" }}
+                                                        whileHover={{ scale: 1.1 }}
+                                                        style={{
+                                                            width: "10vw",
+
+                                                        }} />
+
+                                                </a>
+                                            </div>
+                                            <p className="text-center" style={{
+                                                fontSize: "3vw",
+                                                color: "gray",
+                                                opacity: "0.5",
+                                                fontWeight: "bold",
+                                                fontFamily: "Iceberg",
+                                                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",
+                                            }}> {"<<< Slide >>>"}</p>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+
+                            </Swiper>
+                        </div>
 
 
 
 
 
-                            <div className="md:hidden sm:hidden lg:hidden xl:grid 2xl:grid hidden">
-                                <Link to="/home">
-                                    <img src="https://i.ibb.co/MsgSJ8v/previous-1.png" style={{ width: "40px", opacity: "0.3", borderRadius: "100%", boxShadow: " 5px 5px 5px black", position: "fixed", bottom: "6%" }} alt=""  />
-                                </Link>
-                            </div>
+                        <div className="md:hidden sm:hidden lg:hidden xl:grid 2xl:grid hidden">
+                            <Link to="/home">
+                                <img src="https://i.ibb.co/MsgSJ8v/previous-1.png" style={{ width: "40px", opacity: "0.3", borderRadius: "100%", boxShadow: " 5px 5px 5px black", position: "fixed", bottom: "6%" }} alt="" />
+                            </Link>
+                        </div>
                     </div>
 
                 </div>

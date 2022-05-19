@@ -9,7 +9,7 @@
         "Project_Users": "1",
         "Project_Link": "https://touristicgate.vercel.app/",
         "Project_Code":"https://github.com/ivaniraldi/touristicGate",
-        "Project_Languages":["JavaScript", "HTML", "CSS"],
+        "Project_Languages":["JavaScript", "HTML", "CSS", "Redux", "PostgreSQL", "NodeJS", "Express", "React" ],
         "Project_Image": "https://i.ibb.co/ZVVQtxM/Captura-de-pantalla-2022-05-19-012229.png"
 
 
@@ -24,7 +24,7 @@
         "Project_Users": "1",
         "Project_Link": "https://github.com/ivaniraldi/TyrGaming",
         "Project_Code":"https://github.com/ivaniraldi/TyrGaming",
-        "Project_Languages":["JavaScript", "HTML", "CSS"],
+        "Project_Languages":["JavaScript", "HTML", "CSS", "Redux", "PostgreSQL", "NodeJS", "Express", "React" ],
         "Project_Image": "https://i.ibb.co/2ZNk0WC/Captura-de-pantalla-2022-05-19-012359.png"
     },
     {
@@ -37,7 +37,7 @@
         "Project_Users": "1",
         "Project_Link": "https://woofizy.vercel.app/",
         "Project_Code":"https://github.com/ivaniraldi/woofizy",
-        "Project_Languages":["JavaScript", "HTML", "CSS"],
+        "Project_Languages":["JavaScript", "HTML", "CSS", "Redux", "PostgreSQL", "NodeJS", "Express", "React" ],
         "Project_Image": "https://i.ibb.co/nbFHmMK/Captura-de-pantalla-2022-05-19-012310.png"
     },
     {
@@ -50,7 +50,7 @@
         "Project_Users": "6",
         "Project_Link": "https://sotelino.vercel.app/",
         "Project_Code":"https://github.com/ivaniraldi/Art-E-Commerce",
-        "Project_Languages":["JavaScript", "HTML", "CSS"],
+        "Project_Languages":["JavaScript", "HTML", "CSS", "Redux", "PostgreSQL", "NodeJS", "Express", "React", "Passport", "Stripe", "Tailwind" ],
         "Project_Image": "https://i.ibb.co/RzRYDbh/Captura-de-pantalla-2022-05-19-012434.png"
     }
 ]
