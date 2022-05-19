@@ -119,7 +119,7 @@ export default function ProjectsV2() {
                                         }} />
                                         <div className="flex items-center justify-center py-4">
                                             <a href={project.Project_Link} target="_blank">
-                                                <motion.img src='https://i.ibb.co/MsgSJ8v/previous-1.png' alt='' className="bg-black text-white font-bold rounded-full"
+                                                <motion.img src='https://i.ibb.co/g3DPSLH/vinculado.png' alt='' className="bg-black text-white font-bold rounded-full"
                                                 initial={{ opacity: 0}}
                                                 animate={{ opacity: 1}}
                                                 transition={{ duration: 0.1, ease: "easeInOut"}}
@@ -229,7 +229,7 @@ export default function ProjectsV2() {
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",}}>Date: {project.Project_end_date}</p>
                                                 <div className="flex items-center justify-center py-4">
                                                     <a href={project.Project_Link} target="_blank">
-                                                        <motion.img src='https://i.ibb.co/MsgSJ8v/previous-1.png' alt='' className="bg-black text-white font-bold rounded-full"
+                                                        <motion.img src='https://i.ibb.co/g3DPSLH/vinculado.png' alt='' className="bg-black text-white font-bold rounded-full"
                                                         initial={{ opacity: 0}}
                                                         animate={{ opacity: 1}}
                                                         transition={{ duration: 0.1, ease: "easeInOut"}}

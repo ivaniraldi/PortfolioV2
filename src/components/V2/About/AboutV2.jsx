@@ -254,11 +254,11 @@ export default function AboutV2() {
                                 <img style={{ position: "absolute", right: "4%", bottom: "7%", width: "10vh", transform: "rotate(-40deg)", opacity: "0.7" }} src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt=""  />
                             </div>
                             {/* MEDIA PHONES BACK BUTTON */}
-                            <div className="md:grid sm:grid lg:grid xl:hidden 2xl:grid grid">
+                            {/* <div className="md:grid sm:grid lg:grid xl:hidden 2xl:grid grid">
                                 <Link to="/">
                                     <img src="https://i.ibb.co/MsgSJ8v/previous-1.png" style={{ width: "40px", opacity: "100%", borderRadius: "100%", boxShadow: " 5px 5px 5px black" }} alt=""  />
                                 </Link>
-                            </div>
+                            </div> */}
                             {/* MEDIA Windows BACK BUTTON */}
                             <div className="md:hidden sm:hidden lg:hidden xl:grid 2xl:grid hidden">
                                 <Link to="/home">
