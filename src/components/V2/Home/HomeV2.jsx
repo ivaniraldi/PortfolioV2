@@ -46,7 +46,7 @@ export default function Home() {
             }}
         >
             <div
-                className="flex"
+                className="hidden sm:flex"
                 style={{
                     width: '98%',
                     height: '96vh',
@@ -86,7 +86,7 @@ export default function Home() {
                         background: "white",
                         transform: "rotate(-17deg)",
                         zIndex: "4",
-                    }}/>
+                    }} />
                     <div className='border' style={{
                         widht: "100vh",
                         height: "200vh",
@@ -96,7 +96,7 @@ export default function Home() {
                         background: "black",
                         transform: "rotate(-15deg)",
                         zIndex: "4",
-                    }}/>
+                    }} />
                     <div
                         className="flex justify-center items-center"
                         style={{
@@ -109,61 +109,63 @@ export default function Home() {
                             marginLeft: "1%",
                         }}
                     >
-                            <ParticlesHome></ParticlesHome>
-                            <img src="https://i.ibb.co/VjjNRfW/Sin-t-tulo-2.png" alt="" style={{
-                                width: "35vh",
-                                position: "absolute",
-                                top: "5vh",
-                                left: "5vh",
-                                zIndex: "5",
-                                borderRadius: "50%",
-                                border: "3px solid #fff",
 
-                            }} className="absolute "/>
-                        <div style={{zIndex:"10"}} className="">
-                            <div style={{position: "absolute", left:"3vw"}}>
-                            <Link to="/skills">
-                                <motion.p
-                                    initial={{ opacity: 0, x: -150 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
-                                    transition={{ duration: 0.9, ease: "easeInOut" }}
-                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
-                                >SKILLS</motion.p>
-                            </Link>
+                        <img src="https://i.ibb.co/VjjNRfW/Sin-t-tulo-2.png" alt="" style={{
+                            width: "35vh",
+                            position: "absolute",
+                            top: "5vh",
+                            left: "5vh",
+                            zIndex: "5",
+                            borderRadius: "50%",
+                            border: "3px solid #fff",
+
+                        }} className="absolute " />
+                        <div style={{ zIndex: "10" }} className="">
+                            <div style={{ position: "absolute", left: "3vw" }}>
+                                <Link to="/skills">
+                                    <motion.p
+                                        initial={{ opacity: 0, x: -150 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                        transition={{ duration: 0.9, ease: "easeInOut" }}
+                                        className='text-5xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                                    >SKILLS</motion.p>
+                                </Link>
                                 <Link to="/contact">
                                     <motion.p
                                         initial={{ opacity: 0, x: -150 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
                                         transition={{ duration: 0.7, ease: "easeInOut" }}
-                                        className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                                        className='text-5xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
                                     >CONTACT</motion.p>
+                                    
                                 </Link>
-                            <Link to="/about">
-                                <motion.p
-                                    initial={{ opacity: 0, x: -150 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
-                                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
-                                >ABOUT ME</motion.p>
-                            </Link>
-                            <Link to="/projects">
-                                <motion.p
-                                    initial={{ opacity: 0, x: -150 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
-                                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
-                                >MY PROJECTS</motion.p>
-                            </Link>
+                                <Link to="/about">
+                                    <motion.p
+                                        initial={{ opacity: 0, x: -150 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                                        className='text-5xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                                    >ABOUT ME</motion.p>
+                                </Link>
+                                <Link to="/projects">
+                                    <motion.p
+                                        initial={{ opacity: 0, x: -150 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                                        className='text-5xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                                    >MY PROJECTS</motion.p>
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </motion.div>
                 <div className=' hidden sm:flex w-full text-right'>
                     <div className=' w-full m-10'>
+                    
                         <motion.p
                             initial={{ opacity: 0, y: -500 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -214,7 +216,72 @@ export default function Home() {
 
                 </div>
             </div>
+            <motion.div
+                className='w-full border h-full contents sm:hidden'>
+                <div className='flex justify-center'>
+                    <div style={{}}>
+                    <img className='w-1/2 absolute sm:hidden ' style={{top:"-9vw", left:"-13vw"}} src="https://i.ibb.co/VjjNRfW/Sin-t-tulo-2.png" alt="" />
+                        <motion.p
+                            initial={{ opacity: 0, y: -500 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeInOut" }}
+                            className='text-white text-2xl absolute' style={{ zIndex: "1", top: "15vh", right: "57vw", fontFamily: "Iceberg", fontSize: "", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000" }}
+                        >hi! im </motion.p>
+                        <motion.p
+                            initial={{ opacity: 0, y: -500 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            whileHover={{ opacity: 1, y: -10, scale: 1.05 }}
+                            transition={{ duration: 1, ease: "easeInOut" }}
+                            className=' absolute' style={{ color: "#dc41ff82", right: "10vw", top: "13vh", zIndex: "1", fontFamily: "Iceberg", fontSize: "10vw", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000" }}
+                        >Ivan.Iraldi </motion.p>
+                        <motion.p
+                            initial={{ opacity: 0, y: -500 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 2, ease: "easeInOut" }}
+                            className='text-white text-2xl absolute' style={{ top: "20vh", right: "10vw", zIndex: "1", fontFamily: "Iceberg", fontSize: "4vw", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000" }}
+                        >a Full Stack Web Developer.</motion.p>
+                        <Link to="/skills">
+                            <motion.p
+                                initial={{ opacity: 0, x: -150 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                transition={{ duration: 0.9, ease: "easeInOut" }}
+                                className='text-5xl mt-20' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                            >SKILLS</motion.p>
+                        </Link>
+                        <Link to="/contact">
+                            <motion.p
+                                initial={{ opacity: 0, x: -150 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                transition={{ duration: 0.7, ease: "easeInOut" }}
+                                className='text-5xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                            >CONTACT</motion.p>
+                        </Link>
+                        <Link to="/about">
+                            <motion.p
+                                initial={{ opacity: 0, x: -150 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                transition={{ duration: 0.5, ease: "easeInOut" }}
+                                className='text-5xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                            >ABOUT ME</motion.p>
+                        </Link>
+                        <Link to="/projects">
+                            <motion.p
+                                initial={{ opacity: 0, x: -150 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                                className='text-5xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                            >PROJECTS</motion.p>
+                        </Link>
+                    </div>
 
+
+                </div>
+            </motion.div>
+            <ParticlesHome></ParticlesHome>
         </motion.div>
     )
 }

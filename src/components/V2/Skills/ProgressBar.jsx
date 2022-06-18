@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function ProgressBar({ progress=0, completed=false }) {
+export default function ProgressBar({ progress=0, completed=false, mobile=10}) {
     let handleComplete = completed? "5px": "0px"
     let handleProgress = progress + "vw"
-
+    let handleMobile = mobile + "vw"
 
   return (
     <div style={{
-        width: "10vw",
+        width: handleMobile,
         border: "1px solid black",
         height: "2vh",
         borderRadius: "5px",

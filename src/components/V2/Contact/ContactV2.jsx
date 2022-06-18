@@ -111,7 +111,7 @@ export default function ContactV2() {
 
                 }}>
 
-                <form ref={form} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail} className="hidden sm:contents">
 
                     <div className='grid grid-cols-2 ml-16'>
                         <p className='' style={{ fontFamily: "Iceberg" }}>Name<br />
@@ -168,6 +168,69 @@ export default function ContactV2() {
                         fontFamily: "Iceberg",
                         textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000",
                         fontSize: "2vw",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        boxShadow: "2px 3px 4px #000,"
+                    }}>SEND {">>"}</button>
+
+                </form>
+                <form ref={form} onSubmit={sendEmail} className="contents sm:hidden">
+
+                    <div className='grid grid-cols-2 ml-8'>
+                        <p className='' style={{ fontFamily: "Iceberg" }}>Name<br />
+                            <input required className={`text-black text-xl`} style={{
+                                borderRadius: "6px",
+                                fontFamily: "Iceberg",
+                                width: "25vw",
+                                height: "5vh",
+                                boxShadow: "2px 3px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)"
+                            }}
+                                value={input.name} onChange={(e) => handleChange(e)} placeholder=" John" name="name"></input></p>
+
+                        <p className='' style={{
+                            fontFamily: "Iceberg",
+                        }}>Lastname<br /><input required placeholder=" Doe" onChange={(e) => handleChange(e)} value={input.lastName} name="lastName" className={`text-black text-xl $`} style={{
+                            borderRadius: "6px",
+                            fontFamily: "Iceberg",
+                            width: "25vw",
+                            height: "5vh",
+                            boxShadow: "2px 3px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)"
+                        }}></input></p>
+
+                    </div>
+                    <p className="mt-3 ml-6" style={{
+                        fontFamily: "Iceberg",
+                    }}>Message</p>
+                    <textarea required onChange={(e) => handleChange(e)} value={input.message} placeholder="Enter your message..." name="message" className={`text-black text-xl ml-2`} style={{
+                        borderRadius: "6px",
+                        boxShadow: "2px 3px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",
+                        width: "100%",
+                        resize: "none",
+                        padding: "10px",
+                        fontFamily: "Iceberg",
+                    }}></textarea>
+                    <p className='' style={{
+                        fontFamily: "Iceberg",
+                        marginTop:"9px"
+                    }}>E-mail</p>
+                    <input id="email" type="email" name="email" value={input.email} onChange={(e) => handleChange(e)} placeholder=" email@example.com" className={`text-black text-3xl}`} style={{
+                        borderRadius: "6px",
+                        fontFamily: "Iceberg",
+                        boxShadow: "2px 3px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)"
+                    }}></input>
+                    <br />
+                    <button value="send" type='submit' style={{
+                        borderRadius: "40px",
+                        marginTop: "4vh",
+                        background: "#413F42",
+                        marginLeft: "40vw",
+                        width: "20vw",
+                        color: "white",
+                        textAlign: "center",
+                        height: "7vh",
+                        fontFamily: "Iceberg",
+                        textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000",
+                        fontSize: "4vw",
                         alignItems: "center",
                         justifyContent: "center",
                         boxShadow: "2px 3px 4px #000,"

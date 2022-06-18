@@ -23,7 +23,6 @@ export default function PDetail({ project, setOpenModal, openModal }) {
             }}
         >
             <h1 style={{
-                color: '#fff',
                 fontSize: '2.1vw',
                 fontWeight: 'bold',
                 fontFamily: "Iceberg",
@@ -31,7 +30,6 @@ export default function PDetail({ project, setOpenModal, openModal }) {
 
             }}>{project.Project_name}</h1>
             <p style={{
-                color: '#fff',
                 fontSize: '1.5vw',
                 fontFamily: "Iceberg",
                 textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",
@@ -46,13 +44,13 @@ export default function PDetail({ project, setOpenModal, openModal }) {
                 className="grid grid-cols-2">
                 <div className="text-white">
                     <h1 style={{
-                        color: '#fff',
+    
                         fontSize: '1.3vw',
                         fontWeight: 'bold',
                         fontFamily: "Iceberg",
                     }}>Date:</h1>
                     <p style={{
-                        color: '#fff',
+    
                         fontSize: '1.4vw',
                         fontWeight: 'bold',
                         fontFamily: "Iceberg",
@@ -64,7 +62,7 @@ export default function PDetail({ project, setOpenModal, openModal }) {
                 </div>
                 <div className="text-white">
                     <h1 style={{
-                        color: '#fff',
+    
                         fontSize: '1.3vw',
                         fontWeight: 'bold',
                         fontFamily: "Iceberg",
@@ -73,7 +71,7 @@ export default function PDetail({ project, setOpenModal, openModal }) {
                     }}>Users:</h1> <p
 
                     ><span style={{
-                        color: '#fff',
+    
                         fontSize: '1.4vw',
                         fontWeight: 'bold',
                         fontFamily: "Iceberg",
@@ -89,7 +87,7 @@ export default function PDetail({ project, setOpenModal, openModal }) {
             >
 
                 <h1 style={{
-                    color: '#fff',
+
                     fontSize: '1.3vw',
                     fontWeight: 'bold',
                     fontFamily: "Iceberg",
@@ -98,20 +96,21 @@ export default function PDetail({ project, setOpenModal, openModal }) {
                 }}>Tools:</h1>
 
                 <p style={{
-                    color: '#fff',
+
                     fontSize: '1.1vw',
                     fontFamily: "Iceberg",
                     textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(0, 0, 0, 0.25)",
 
-                }}>{project.Project_Languages.map(l => (<motion.button
+                }}>{project.Project_Languages.map(l => (<motion.div
+                className='inline'
                     style={{ marginLeft: "5px" }}
                     initial={{ opacity: 0, }}
                     animate={{ opacity: 1, }}
                     transition={{ duration: 0.1, ease: "easeInOut" }}
-                    whileHover={{ scale: 1.1 }}>{l + " "}</motion.button>))}</p>
+                    whileHover={{ scale: 1.1 }}>{l + " "}</motion.div>))}</p>
 
                 <p style={{
-                    color: '#fff',
+
                     fontSize: '1.1vw',
                     fontWeight: 'bold',
                     fontFamily: "Iceberg",
@@ -126,6 +125,7 @@ export default function PDetail({ project, setOpenModal, openModal }) {
                             whileHover={{ scale: 1.1 }}
                             style={{
                                 width: "3vw",
+                                border: "3px solid black"
 
                             }} />
                     </a>
@@ -137,6 +137,7 @@ export default function PDetail({ project, setOpenModal, openModal }) {
                             whileHover={{ scale: 1.1 }}
                             style={{
                                 width: "3vw",
+                                border: "3px solid black"
 
                             }} />
 
