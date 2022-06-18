@@ -179,11 +179,13 @@ export default function AboutV2() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9, ease: "easeInOut" }}
                 className='w-1/4 bottom-0' style={{ position: "absolute", left: "-7.5vw", zIndex: "2" }} src="https://i.ibb.co/nn5PBSg/Open-Peeps-Bust.png" alt="" />
+            <div className='hidden sm:contents'>
             <motion.img
                 initial={{ opacity: 0, x: 500 }}
                 animate={{ opacity: 1, x: 0, scaleX: -1 }}
                 transition={{ duration: 0.9, ease: "easeInOut" }}
                 className='w-1/4' style={{ position: "absolute", bottom: "42vh", right: "0", transform: "scaleX(-1)", zIndex: "2" }} src="https://i.ibb.co/6mvDtTK/Open-Peeps-Bust-1.png" alt="" />
+            </div>
             <ParticlesBackground />
 
 
