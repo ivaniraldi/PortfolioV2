@@ -216,7 +216,7 @@ export default function ThreeAnim() {
                     zIndex: "1",
                 }}>
                 ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-                <motion.span style={{ position: "absolute", bottom: "32vh", left: "15vw", zIndex: "4" }}
+                <motion.span style={{ position: "absolute", bottom: "32vh", left: "10vw", zIndex: "4" }}
                     whileHover={{ scale: 1.1 }}
                 >
 
@@ -309,7 +309,7 @@ export default function ThreeAnim() {
                     <h1 style={{ fontSize: "5vw", fontWeight: "bold" }}>“So many books, so little time.”
 ― Frank Zappa.</h1>
                     
-                    <div className='grid grid-cols-2 gap-4 mt-2'>
+                    <div className='grid grid-cols-2 gap-2'>
                         <p style={{ fontSize: "3.1vw" }}>
                             <ul>
                                 <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons.flaticon.com/png/512/2961/premium/2961545.png?token=exp=1655581297~hmac=ab3120affc24746aae6dcf99ffb0f66e" alt="" /> •Strong creative ability.</li>
@@ -349,7 +349,7 @@ export default function ThreeAnim() {
                             </motion.div>
                         </p>
                     </div>
-                        <p style={{ fontSize: "3.2vw", marginTop:"3vh" }}>
+                        <p style={{ fontSize: "3.2vw", marginTop:"1vh" }}>
                             <ul>
                                 <li>•Optimize <span className='font-bold'>graphics</span> and page speed for enhanced user experience.</li>
                                 <li>•Check for <span className='font-bold'>brand consistency</span> across the website.</li>

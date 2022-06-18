@@ -322,7 +322,7 @@ export default function AboutV2() {
                 <div style={{
                     width: "40vw",
                     height: "9vw",
-                    marginTop: "10vh",
+                    marginTop: "7vh",
                     marginLeft: "22vw",
                     display: "flex"
                 }}>
