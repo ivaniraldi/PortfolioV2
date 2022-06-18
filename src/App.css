@@ -1,9 +1,6 @@
 
-.pp {
-    background: linear-gradient(150deg, #ff6464,  #da84ff, #5a5aff, #11ff00);
+body {
     background: black;
-    background-size: 400% 300%;
-    animation: BgGradient 2s ease infinite;
 }
 html{
     scroll-behavior:smooth;
@@ -18,3 +15,4 @@ html{
 ::-webkit-scrollbar {
     display: none;
 }
+

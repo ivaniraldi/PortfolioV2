@@ -4,34 +4,35 @@ import { motion } from 'framer-motion'
 import Swal from 'sweetalert2'
 import s from './HomeV2.module.css'
 import ParticlesHome from '../../particles/ParticlesHome.jsx'
+import TypewriterComponent from 'typewriter-effect'
 
 export default function Home() {
-    function handleDownload(){
+    function handleDownload() {
         let timerInterval
-Swal.fire({
-  title: 'Downloading Resume!',
-  backdrop: true,
-  background: "#000",
-  color: "#fff",
-  html: 'Done in <b></b> milliseconds.',
-  timer: 1000,
-  timerProgressBar: true,
-  didOpen: () => {
-    Swal.showLoading()
-    const b = Swal.getHtmlContainer().querySelector('b')
-    timerInterval = setInterval(() => {
-      b.textContent = Swal.getTimerLeft()
-    }, 100)
-  },
-  willClose: () => {
-    clearInterval(timerInterval)
-  }
-}).then((result) => {
-  /* Read more about handling dismissals below */
-  if (result.dismiss === Swal.DismissReason.timer) {
-    console.log('I was closed by the timer')
-  }
-})
+        Swal.fire({
+            title: 'Downloading Resume!',
+            backdrop: true,
+            background: "#000",
+            color: "#fff",
+            html: 'Done in <b></b> milliseconds.',
+            timer: 1000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                    b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+        }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                console.log('I was closed by the timer')
+            }
+        })
     }
     return (
         <motion.div
@@ -62,7 +63,7 @@ Swal.fire({
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                     className="sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-2/5 w-full flex justify-center items-center"
-                    style={{    
+                    style={{
                         zIndex: "1",
 
                         height: '96%',
@@ -76,20 +77,26 @@ Swal.fire({
                     }}
 
                 >
-
-                    <img src="https://i.ibb.co/CnFkZY1/react.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "6vw", top: "6vh", left: "3vw", opacity: "0.3" }} />
-                    <img src="https://i.ibb.co/4MZyp5t/nodejs.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", bottom: "15vh", left: "80vw", opacity: "0.2" }} />
-                    <img src="https://i.ibb.co/dfp09PG/secuencia-de-comandos-de-java.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", top: "35.5vh", left: "85vw", opacity: "0.6" }} />
-                    <img src="https://i.ibb.co/cNNqZgB/postgre.png" alt="" className={`absolute ${s.imgFullScreen}`} style={{ width: "5vw", bottom: "6.8vh", left: "3vw", opacity: "0.1" }} />
-                    {/* Phone media images */}
-                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", top: "6vh", left: "9vw", transform: "rotate(15deg)", opacity:"0.4" }} />
-                    <img src="https://i.ibb.co/sPfDfYg/hexagonos.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", bottom: "1vh", left: "70vw", transform: "rotate(-155deg)", opacity:"0.4" }} />
-                    <img src="https://i.ibb.co/CnFkZY1/react.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "20vw", top: "6vh", left: "40vw", opacity: "0.6" }} />
-                    <img src="https://i.ibb.co/4MZyp5t/nodejs.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", bottom: "1.8vh", left: "40vw", opacity: "0.4" }} />
-                    <img src="https://i.ibb.co/dfp09PG/secuencia-de-comandos-de-java.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", top: "6.5vh", left: "70vw", opacity: "0.6" }} />
-                    <img src="https://i.ibb.co/cNNqZgB/postgre.png" alt="" className={`absolute ${s.imgPhoneScreen}`} style={{ width: "19vw", bottom: "1.8vh", left: "10vw", opacity: "0.4" }} />
-
-
+                    <div className='border' style={{
+                        widht: "100vh",
+                        height: "200vh",
+                        padding: "65vh",
+                        marginRight: "12%",
+                        position: "fixed",
+                        background: "white",
+                        transform: "rotate(-17deg)",
+                        zIndex: "4",
+                    }}/>
+                    <div className='border' style={{
+                        widht: "100vh",
+                        height: "200vh",
+                        padding: "64.6vh",
+                        marginRight: "12%",
+                        position: "fixed",
+                        background: "black",
+                        transform: "rotate(-15deg)",
+                        zIndex: "4",
+                    }}/>
                     <div
                         className="flex justify-center items-center"
                         style={{
@@ -102,55 +109,56 @@ Swal.fire({
                             marginLeft: "1%",
                         }}
                     >
-                        <div>
-                            <ParticlesHome></ParticlesHome> 
-                            <Link to="/projects">
-                                <motion.p
-                                    initial={{ opacity: 0, x: -150 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
-                                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
-                                >PROJECTS</motion.p>
-                            </Link>
-                            <Link to="/about">
-                                <motion.p
-                                    initial={{ opacity: 0, x: -150 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    whileHover={{ opacity: 1, x: +10, scale: 1.1 }}
-                                    transition={{ duration: 0.6, ease: "easeInOut" }}
-                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
-                                >ABOUT</motion.p>
-                            </Link>
-                            <a onClick={() => handleDownload()} href="https://fv9-1.failiem.lv/down.php?cf&i=8nypjn46t&n=Curriculum+Vitae.pdf" target="_self">
-                            <motion.p
-                                initial={{ opacity: 0, x: -150 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                
-                                whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
-                                transition={{ duration: 0.7, ease: "easeInOut" }}
-                                className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
-                            >RESUME</motion.p>
-                            </a>
-                            <Link to="/contact">
-                                <motion.p
-                                    initial={{ opacity: 0, x: -150 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    whileHover={{ opacity: 1, x: +10, scale: 1.1 }}
-                                    transition={{ duration: 0.8, ease: "easeInOut" }}
-                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
-                                >CONTACT</motion.p>
-                            </Link>
+                            <ParticlesHome></ParticlesHome>
+                            <img src="https://i.ibb.co/VjjNRfW/Sin-t-tulo-2.png" alt="" style={{
+                                width: "35vh",
+                                position: "absolute",
+                                top: "5vh",
+                                left: "5vh",
+                                zIndex: "5",
+                                borderRadius: "50%",
+                                border: "3px solid #fff",
+
+                            }} className="absolute "/>
+                        <div style={{zIndex:"10"}} className="">
+                            <div style={{position: "absolute", left:"3vw"}}>
                             <Link to="/skills">
                                 <motion.p
                                     initial={{ opacity: 0, x: -150 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
                                     transition={{ duration: 0.9, ease: "easeInOut" }}
-                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
                                 >SKILLS</motion.p>
                             </Link>
-
+                                <Link to="/contact">
+                                    <motion.p
+                                        initial={{ opacity: 0, x: -150 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                        transition={{ duration: 0.7, ease: "easeInOut" }}
+                                        className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                                    >CONTACT</motion.p>
+                                </Link>
+                            <Link to="/about">
+                                <motion.p
+                                    initial={{ opacity: 0, x: -150 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                                >ABOUT ME</motion.p>
+                            </Link>
+                            <Link to="/projects">
+                                <motion.p
+                                    initial={{ opacity: 0, x: -150 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    whileHover={{ opacity: 1, x: -10, scale: 1.1 }}
+                                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                                    className='sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl text-4xl' style={{ fontFamily: "Iceberg", color: "white", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000", }}
+                                >MY PROJECTS</motion.p>
+                            </Link>
+                            </div>
                         </div>
                     </div>
                 </motion.div>
@@ -165,6 +173,7 @@ Swal.fire({
                         <motion.p
                             initial={{ opacity: 0, y: -500 }}
                             animate={{ opacity: 1, y: 0 }}
+                            whileHover={{ opacity: 1, y: -10, scale: 1.05 }}
                             transition={{ duration: 1, ease: "easeInOut" }}
                             className=' absolute' style={{ color: "#dc41ff82", right: "10vw", top: "50px", zIndex: "1", fontFamily: "Iceberg", fontSize: "6vw", textShadow: "2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000" }}
                         >Ivan.Iraldi</motion.p>
@@ -186,7 +195,7 @@ Swal.fire({
                                 scale: [1, 0.5, 0.5, 1, 1],
                                 rotate: [0, 0, 270, 270, 0],
                             }}
-                            className={`absolute  ${s.imgFullScreen}`} style={{ bottom:"0vh", right: "0vw", zIndex: "0" }} src='https://i.gifer.com/Hihj.gif' alt=""  />
+                            className={`absolute  ${s.imgFullScreen}`} style={{ bottom: "0vh", right: "0vw", zIndex: "0" }} src='https://i.gifer.com/Hihj.gif' alt="" />
 
                         {/* <motion.img
                             initial={{ opacity: 0,  y:1300, x:-500 }}
