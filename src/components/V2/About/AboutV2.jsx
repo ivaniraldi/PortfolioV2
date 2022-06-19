@@ -184,7 +184,7 @@ export default function AboutV2() {
                 initial={{ opacity: 0, x: 500 }}
                 animate={{ opacity: 1, x: 0, scaleX: -1 }}
                 transition={{ duration: 0.9, ease: "easeInOut" }}
-                className='w-1/4' style={{ position: "absolute", bottom: "42vh", right: "0", transform: "scaleX(-1)", zIndex: "3" }} src="https://i.ibb.co/6mvDtTK/Open-Peeps-Bust-1.png" alt="" />
+                className='w-1/4' style={{ position: "absolute", bottom: "0", right: "0", transform: "scaleX(-1)", zIndex: "3" }} src="https://i.ibb.co/6mvDtTK/Open-Peeps-Bust-1.png" alt="" />
             </div>
             <ParticlesBackground />
 
