@@ -74,7 +74,7 @@ export default function ThreeAnim() {
 
                     border: "10px solid black",
                     width: "20vw",
-                    height: "30vw",
+                    height: "55vh",
                     position: "absolute",
                     bottom: "8vh",
                     right: "3vw",
@@ -127,7 +127,7 @@ export default function ThreeAnim() {
                     position: "absolute",
                     top: "8vh",
                     left: "8vw",
-                    height: "24vw",
+                    height: "50vh",
                     width: "64vw",
                 }}>
                 <div className='m-4'>

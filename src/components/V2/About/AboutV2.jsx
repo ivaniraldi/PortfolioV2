@@ -178,13 +178,13 @@ export default function AboutV2() {
                 initial={{ opacity: 0, x: -500 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9, ease: "easeInOut" }}
-                className='w-1/4 bottom-0' style={{ position: "absolute", left: "-7.5vw", zIndex: "2" }} src="https://i.ibb.co/nn5PBSg/Open-Peeps-Bust.png" alt="" />
+                className='w-1/4 bottom-0' style={{ position: "absolute", left: "-7.5vw", zIndex: "3" }} src="https://i.ibb.co/nn5PBSg/Open-Peeps-Bust.png" alt="" />
             <div className='hidden sm:contents'>
             <motion.img
                 initial={{ opacity: 0, x: 500 }}
                 animate={{ opacity: 1, x: 0, scaleX: -1 }}
                 transition={{ duration: 0.9, ease: "easeInOut" }}
-                className='w-1/4' style={{ position: "absolute", bottom: "42vh", right: "0", transform: "scaleX(-1)", zIndex: "2" }} src="https://i.ibb.co/6mvDtTK/Open-Peeps-Bust-1.png" alt="" />
+                className='w-1/4' style={{ position: "absolute", bottom: "42vh", right: "0", transform: "scaleX(-1)", zIndex: "3" }} src="https://i.ibb.co/6mvDtTK/Open-Peeps-Bust-1.png" alt="" />
             </div>
             <ParticlesBackground />
 
@@ -261,7 +261,10 @@ export default function AboutV2() {
                     <br />
                     <span style={{ marginLeft: "3vw", }}>
 
-                        Im 23 years old and im from Buenos Aires, Argentina.
+                        Im 23 years old and im from Buenos Aires, <br />
+                        <span style={{ marginLeft: "2vw", }}>
+                            Argentina.
+                            </span>
                     </span>
                     <br />
                     <span style={{ marginLeft: "2vw", }}>
@@ -324,7 +327,7 @@ export default function AboutV2() {
                 <div style={{
                     width: "40vw",
                     height: "9vw",
-                    marginTop: "7vh",
+                    marginTop: "12vw",
                     marginLeft: "22vw",
                     display: "flex"
                 }}>
