@@ -312,10 +312,10 @@ export default function ThreeAnim() {
                     <div className='grid grid-cols-2 gap-2'>
                         <p style={{ fontSize: "3.1vw" }}>
                             <ul>
-                                <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons.flaticon.com/png/512/2961/premium/2961545.png?token=exp=1655581297~hmac=ab3120affc24746aae6dcf99ffb0f66e" alt="" /> •Strong creative ability.</li>
-                                <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons-png.flaticon.com/512/1/1755.png" alt="" /> •Attention to detail.</li>
-                                <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons-png.flaticon.com/512/1078/1078011.png" alt="" /> •Strong communication skills.</li>
-                                <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons.flaticon.com/png/512/3049/premium/3049117.png?token=exp=1655581361~hmac=b5b39209307656d531ebb0add49bfe8b" alt="" /> •Good problem-solving skills.</li>
+                                <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons.flaticon.com/png/512/2961/premium/2961545.png?token=exp=1655581297~hmac=ab3120affc24746aae6dcf99ffb0f66e" alt=" 1" /> •Strong creative ability.</li>
+                                <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons-png.flaticon.com/512/1/1755.png" alt=" 2" /> •Attention to detail.</li>
+                                <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons-png.flaticon.com/512/1078/1078011.png" alt=" 3" /> •Strong communication skills.</li>
+                                <li className='mt-1'><img className='w-6 inline' src="https://cdn-icons.flaticon.com/png/512/3049/premium/3049117.png?token=exp=1655581361~hmac=b5b39209307656d531ebb0add49bfe8b" alt=" 4" /> •Good problem-solving skills.</li>
                             </ul>
                         </p>
                         <p style={{ fontSize: "5vw", marginLeft: "3vw", fontWeight: "" }} >
@@ -349,7 +349,7 @@ export default function ThreeAnim() {
                             </motion.div>
                         </p>
                     </div>
-                        <p style={{ fontSize: "3.2vw", marginTop:"1vh" }}>
+                        <p style={{ fontSize: "3.2vw", marginTop:"4vh" }}>
                             <ul>
                                 <li>•Optimize <span className='font-bold'>graphics</span> and page speed for enhanced user experience.</li>
                                 <li>•Check for <span className='font-bold'>brand consistency</span> across the website.</li>

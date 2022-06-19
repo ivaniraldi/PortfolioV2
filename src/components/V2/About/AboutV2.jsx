@@ -259,15 +259,15 @@ export default function AboutV2() {
                     development.
                     </span>
                     <br />
-                    <span style={{ marginLeft: "3vw", }}>
+                    <span style={{ marginLeft: "4vw", }}>
 
                         Im 23 years old and im from Buenos Aires, <br />
-                        <span style={{ marginLeft: "2vw", }}>
+                        <span style={{ marginLeft: "3vw", }}>
                             Argentina.
                             </span>
                     </span>
                     <br />
-                    <span style={{ marginLeft: "1vw", }}>
+                    <span style={{ marginLeft: "2vw", }}>
                         I currently work at
                     </span>
                     <motion.span
@@ -307,12 +307,12 @@ export default function AboutV2() {
                     </motion.span>
                     .
                     <br />
-                    <span style={{ color: "black", fontSize: "6vw", marginLeft: "15vw" }}>¡Thanks for reading!</span>
+                    <span style={{ color: "black", fontSize: "6vw", marginLeft: "19vw" }}>¡Thanks for reading!</span>
                     <br />
                     <br />
                     <div>
                     <span >
-                        I wish that we get to know each other better, in any case your visit was a pleasure,<br />
+                        I wish that we get to know each other better,<br /> in any case your visit was a pleasure,<br />
                     </span>
                     <span style={{ marginLeft: "vw" }}>
                         I leave you
@@ -329,8 +329,9 @@ export default function AboutV2() {
                 <div style={{
                     width: "40vw",
                     height: "9vw",
-                    marginTop: "12vw",
-                    marginLeft: "22vw",
+                    position: "absolute",
+                    bottom: "4vh",
+                    left: "18vw",
                     display: "flex"
                 }}>
                     <motion.a href="https://www.linkedin.com/in/ivan-iraldi-8413a3213/"
