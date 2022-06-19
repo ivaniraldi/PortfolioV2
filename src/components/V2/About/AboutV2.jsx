@@ -330,7 +330,7 @@ export default function AboutV2() {
                     width: "40vw",
                     height: "9vw",
                     position: "absolute",
-                    bottom: "4vh",
+                    top: "86vh",
                     left: "18vw",
                     display: "flex"
                 }}>
