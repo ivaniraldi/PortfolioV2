@@ -253,7 +253,7 @@ export default function ThreeAnim() {
                     width: "45vw",
                     height: "68vw",
                     position: "absolute",
-                    bottom: "4vw",
+                    bottom: "3vw",
                     right: "2vh",
                     zIndex: "3",
                 }}
