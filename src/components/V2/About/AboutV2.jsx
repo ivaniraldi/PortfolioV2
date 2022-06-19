@@ -259,7 +259,7 @@ export default function AboutV2() {
                     development.
                     </span>
                     <br />
-                    <span style={{ marginLeft: "4vw", }}>
+                    <span style={{ marginLeft: "4vw", fontSize:"4.5vw" }}>
 
                         Im 23 years old and im from Buenos Aires, <br />
                         <span style={{ marginLeft: "3vw", }}>
