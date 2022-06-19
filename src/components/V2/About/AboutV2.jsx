@@ -178,7 +178,7 @@ export default function AboutV2() {
                 initial={{ opacity: 0, x: -500 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.9, ease: "easeInOut" }}
-                className='w-1/4 bottom-0' style={{ position: "absolute", left: "-7.5vw", zIndex: "3" }} src="https://i.ibb.co/nn5PBSg/Open-Peeps-Bust.png" alt="" />
+                className='w-1/4' style={{ position: "absolute", bottom:"0", left: "-7.5vw", zIndex: "3" }} src="https://i.ibb.co/nn5PBSg/Open-Peeps-Bust.png" alt="" />
             <div className='hidden sm:contents'>
             <motion.img
                 initial={{ opacity: 0, x: 500 }}
@@ -267,7 +267,7 @@ export default function AboutV2() {
                             </span>
                     </span>
                     <br />
-                    <span style={{ marginLeft: "2vw", }}>
+                    <span style={{ marginLeft: "1vw", }}>
                         I currently work at
                     </span>
                     <motion.span
@@ -310,7 +310,8 @@ export default function AboutV2() {
                     <span style={{ color: "black", fontSize: "6vw", marginLeft: "15vw" }}>¡Thanks for reading!</span>
                     <br />
                     <br />
-                    <span style={{ marginLeft: "10vw" }}>
+                    <div>
+                    <span >
                         I wish that we get to know each other better, in any case your visit was a pleasure,<br />
                     </span>
                     <span style={{ marginLeft: "vw" }}>
@@ -323,6 +324,7 @@ export default function AboutV2() {
                     ><span style={{ color: "#023a00" }}> my networks </span>
                     </motion.span>
                     for any <br /> questions you may have.
+                    </div>
                 </text>
                 <div style={{
                     width: "40vw",

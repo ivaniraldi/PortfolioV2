@@ -253,14 +253,14 @@ export default function ThreeAnim() {
                     width: "45vw",
                     height: "68vw",
                     position: "absolute",
-                    bottom: "2vh",
+                    bottom: "4vw",
                     right: "2vh",
                     zIndex: "3",
                 }}
             >
-                <div className='m-1' style={{ height: "10vh", fontSize: "3vw", }}>
+                <div className='m-1' style={{ height: "10vh", fontSize: "3vw",  }}>
 
-                    <p style={{ fontWeight: "bold", marginBottom: "2vh", fontSize: "3vw", textAlign: "center" }}>I'm able to speak and understand:</p>
+                    <p style={{ fontWeight: "bold",  fontSize: "3vw", textAlign: "center" }}>I'm able to speak and understand:</p>
                     <div style={{ border: "1px solid black" }} />
                     <br />
                     <p style={{ marginLeft: "2.5vw", fontWeight: "bold" }}>
@@ -306,7 +306,7 @@ export default function ThreeAnim() {
                     width: "85vw",
                 }}>
                 <div className='m-4'>
-                    <h1 style={{ fontSize: "5vw", fontWeight: "bold" }}>“So many books, so little time.”
+                    <h1 style={{ fontSize: "5vw", fontWeight: "bold" }}>“So many books, so little time.” <br />
 ― Frank Zappa.</h1>
                     
                     <div className='grid grid-cols-2 gap-2'>

@@ -215,8 +215,7 @@ export default function ProjectsV2() {
                                                         fontFamily: "Iceberg",
                                                     }}>{project.Project_end_date}</p></p>
                                                 </div>
-
-                                                <div>
+                                                <div className='' style={{position:"absolute", left:"38vw"}}>
                                                     <h1 style={{
                                                         fontSize: "5vw",
                                                         fontWeight: "bold",
